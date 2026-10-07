@@ -1,6 +1,8 @@
 ### Mateus Melo
 Self-taught full-stack developer. I build systems that solve real business problems — not tutorial projects.
 
+🌐 **[mateusmeloc.github.io](https://mateusmeloc.github.io)** · open-source: **[mcp-erp-server](https://github.com/mateusmeloc/mcp-erp-server)** · **[whatsapp-receipts-agent](https://github.com/mateusmeloc/whatsapp-receipts-agent)**
+
 **Highlight:** I built and maintain in production a **multi-tenant SaaS ERP** (Next.js + TypeScript + Supabase/PostgreSQL) used daily by a real business, with financial management, scheduling, commercial CRM, and AI-powered insights. 1,000+ commits, automated tests, and CI configured.
 
 ---
@@ -15,9 +17,9 @@ Self-taught full-stack developer. I build systems that solve real business probl
 
 **SaaS ERP (multi-tenant)** — production system for a real business, covering financial management (revenue, expenses, reconciliation, invoicing), scheduling, a commercial CRM funnel, and AI-generated insights across every module. Next.js + TypeScript + Supabase/PostgreSQL, tenant-guarded routes, automated tests (Vitest), CI pipeline. 1,000+ commits over several months of real usage. Private — happy to walk through it live.
 
-**MCP server for a business ERP** — a remote Model Context Protocol server exposing 50+ tools (financial reports, scheduling, patient records, sales/commercial data, invoicing) so an AI assistant can query and operate a real production system through conversation instead of a UI. Implements OAuth 2.1 (PKCE + Dynamic Client Registration), stateless Streamable HTTP, write actions gated behind explicit preview-and-confirm plus rate limiting, and data-minimization for personal records. TypeScript, Model Context Protocol SDK, Express, deployed on Railway.
+**MCP server for a business ERP** — a remote Model Context Protocol server exposing 50+ tools (financial reports, scheduling, patient records, sales/commercial data, invoicing) so an AI assistant can query and operate a real production system through conversation instead of a UI. Implements OAuth 2.1 (PKCE + Dynamic Client Registration), stateless Streamable HTTP, write actions gated behind explicit preview-and-confirm plus rate limiting, and data-minimization for personal records. TypeScript, Model Context Protocol SDK, Express, deployed on Railway. The production system is private; an open-source reference version of the same patterns, running on synthetic data with tests and CI, is **[mcp-erp-server](https://github.com/mateusmeloc/mcp-erp-server)**.
 
-**Autonomous WhatsApp agent** — an always-on operational agent (Node 20 + TypeScript) that reads a business's CRM and ERP, reconciles payment receipts against open invoices via OCR and matching, and delivers a daily operational report — all inside a hard-scoped, single-user whitelist with human-in-the-loop approval for anything irreversible. Deployed in production on Railway. Private — production system with real operational data.
+**Autonomous WhatsApp agent** — an always-on operational agent (Node 20 + TypeScript) that reads a business's CRM and ERP, reconciles payment receipts against open invoices via OCR and matching, and delivers a daily operational report — all inside a hard-scoped, single-user whitelist with human-in-the-loop approval for anything irreversible. Deployed in production on Railway. Private — production system with real operational data. An open-source reference version (mock ledger, signed webhooks, a real conversation transcript) is **[whatsapp-receipts-agent](https://github.com/mateusmeloc/whatsapp-receipts-agent)**.
 
 **Multi-tenant CRM** — a newer project (Next.js 16, Prisma + PostgreSQL, next-auth with role-based access across 6 roles) built with production practices from day one: tenant isolation, rate limiting, and CI configured before the first feature shipped.
 
